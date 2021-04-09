@@ -19,6 +19,7 @@ float deltaTime = 0;
 
 String prevTimerOutput;
 
+// fiz essa função para converter em hh:mm
 String convertTime(float mins) {
   int minsInt = (int)ceil(mins);
   int hours = (minsInt / 60);
@@ -54,6 +55,8 @@ void setTimerLoop() {
     digitalWrite(pinAquecedor, HIGH);
   }
 }
+
+// nn sei pq q continua a girar kkkkk
 
 void timerLoop() {
   deltaTime *= 100.0; // Acelera essa parte da simulação para fins de teste
